@@ -7,6 +7,7 @@ REDIS_PREFIX = "rt_playground"
 SCHEDULE = {
     "success": {
         "task": "rt_playground.tasks.success",
+        "singleton": False,
         "args": [40],
         "schedule": run_every(seconds=30),
     },
