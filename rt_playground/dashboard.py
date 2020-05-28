@@ -10,4 +10,7 @@ def application(environ, start_response):
 
 
 if __name__ == '__main__':
-    run_simple('localhost', 8080, application, use_reloader=True)
+    host = int(os.environ.get("HOST", "localhost"))
+    port = int(os.environ.get("PORT", 8080))
+    user_reloader = bool(os.environ.get("USE_RELOADER", True))
+    run_simple(host, port, application, use_reloader=use_reloader)
