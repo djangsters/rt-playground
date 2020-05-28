@@ -1,3 +1,5 @@
+import os
+
 from rt_dashboard.web import app as rt_app
 from werkzeug.serving import run_simple
 from werkzeug.wrappers import Request
