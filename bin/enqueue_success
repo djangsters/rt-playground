@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+from redis_tasks import Queue
+
+Queue().enqueue_call("rt_playground.tasks.success")
