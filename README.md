@@ -9,8 +9,8 @@ rt-playground allows you to easily try out [redis-tasks](
 https://github.com/djangsters/redis-tasks) and [rt-dashboard](
 https://github.com/djangsters/rt-dashboard).
 
-Setup
------
+Local setup
+-----------
 1. Create and activate a python virtualenv
 2. Install python requirements 
     ```
