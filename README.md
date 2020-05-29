@@ -1,6 +1,10 @@
 rt-playground
 =============
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+**Warning**: Paid Heroku dynos will be used! 
+
 rt-playground allows you to easily try out [redis-tasks](
 https://github.com/djangsters/redis-tasks) and [rt-dashboard](
 https://github.com/djangsters/rt-dashboard).
