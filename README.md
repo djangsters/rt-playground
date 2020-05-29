@@ -33,3 +33,11 @@ Local setup
     honcho start
    ```
 6. rt-dashboard should be accessible at http://localhost:8080
+
+Docker setup
+------------
+1. Start all containers
+    ```
+    docker-compose up
+    ```
+2. rt-dashboard should be accessible at http://localhost:8080
