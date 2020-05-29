@@ -1,0 +1,47 @@
+{
+  "name": "rt-playground",
+  "description": "A playground to get familiar with redis-tasks and rt-dashboard",
+  "repository": "https://github.com/djangsters/rt-playground",
+  "keywords": [
+    "python",
+    "redis",
+    "task runner",
+    "monitoring",
+    "demo"
+  ],
+  "addons": [
+    "heroku-redis:hobby-dev"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "HOST": {
+      "value": "0.0.0.0"
+    },
+    "RT_SETTINGS_MODULE": {
+      "description": "redis-tasks settings module",
+      "value": "rt_playground.rt_settings"
+    },
+    "USE_RELOADER": {
+      "value": "0"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "hobby"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "hobby"
+    },
+    "scheduler": {
+      "quantity": 1,
+      "size": "hobby"
+    }
+  },
+  "success_url": "/"
+}

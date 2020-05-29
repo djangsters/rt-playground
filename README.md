@@ -1,12 +1,23 @@
 rt-playground
 =============
 
-rt-playground allows you to easily try out [redis-tasks](
+`rt-playground` allows you to easily try out [redis-tasks](
 https://github.com/djangsters/redis-tasks) and [rt-dashboard](
 https://github.com/djangsters/rt-dashboard).
 
-Setup
------
+Heroku setup
+------------
+`rt-playground` can be easily deployed to Heroku by pressing the button below,
+however it requires at least three different processes to run, in particular
+web, scheduler and worker, which prevents usage of free Heroku dynos and requires
+Heroku account validation.    
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+**Warning**: Paid Heroku dynos will be used! 
+
+Local setup
+-----------
 1. Create and activate a python virtualenv
 2. Install python requirements 
     ```

@@ -1,6 +1,8 @@
+import os
+
 from redis_tasks import run_every
 
-REDIS_URL = "redis://127.0.0.1:6379"
+REDIS_URL = os.environ.get("REDIS_URL")
 REDIS_PREFIX = "rt_playground"
 SCHEDULE = {
     "success": {
