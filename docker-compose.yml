@@ -1,0 +1,40 @@
+version: "3.2"
+services:
+
+  redis:
+    image: redis:6-alpine
+
+  web:
+    image: rt-playground
+    build: .
+    depends_on:
+      - redis
+    volumes:
+      - .:/usr/src/app
+    env_file:
+      - .env
+    environment:
+      REDIS_URL: redis://redis:6379
+      HOST: 0.0.0.0
+    ports:
+      - "8080:8080"
+
+  worker:
+    image: rt-playground
+    command: redis_tasks worker
+    depends_on:
+      - redis
+    env_file:
+      - .env
+    environment:
+      REDIS_URL: redis://redis:6379
+
+  scheduler:
+    image: rt-playground
+    command: redis_tasks scheduler
+    depends_on:
+      - redis
+    env_file:
+      - .env
+    environment:
+      REDIS_URL: redis://redis:6379
