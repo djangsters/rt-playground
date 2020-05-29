@@ -34,11 +34,7 @@
       "quantity": 1,
       "size": "hobby"
     },
-    "worker1": {
-      "quantity": 1,
-      "size": "hobby"
-    },
-    "worker2": {
+    "worker": {
       "quantity": 1,
       "size": "hobby"
     },
