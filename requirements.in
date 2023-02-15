@@ -1,7 +1,7 @@
 redis-tasks
 rt-dashboard
-# rt-dashboard 0.0.6 supports werkzeug<1.0.0
-werkzeug<1.0.0
+# rt-dashboard 0.0.6 supports werkzeug<3.0.0
+werkzeug<3.0.0
 
 honcho
 
