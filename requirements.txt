@@ -10,12 +10,12 @@ click==7.1.2
     #   redis-tasks
 croniter==0.3.31
     # via redis-tasks
-flake8-isort==3.0.0
-    # via -r requirements.in
 flake8==3.8.2
     # via
     #   -r requirements.in
     #   flake8-isort
+flake8-isort==3.0.0
+    # via -r requirements.in
 honcho==1.0.1
     # via -r requirements.in
 isort[pyproject]==4.3.21
@@ -38,12 +38,12 @@ pytz==2020.1
     # via
     #   redis-tasks
     #   rt-dashboard
+redis==4.5.3
+    # via redis-tasks
 redis-tasks==0.0.9
     # via
     #   -r requirements.in
     #   rt-dashboard
-redis==3.5.2
-    # via redis-tasks
 rt-dashboard==0.0.6
     # via -r requirements.in
 six==1.15.0
